@@ -30,7 +30,7 @@ int main(){
                 double dx = gears[i].x - gears[j].x;
                 double dy = gears[i].y - gears[j].y;
                 double dist = sqrt(dx*dx + dy*dy);
-                if(dist < gears[i].ir + gears[j].ir - EPS || dist < gears[i].orr + gears[j].orr - EPS){
+                if(dist < gears[i].ir + gears[j].ir - EPS || dist < gears[i].orr + gears[j].orr - EPS || dist < gears[i].ir + gears[j].orr - EPS || dist < gears[i].orr + gears[j].ir - EPS){
                     overlap = true;
                 }
             }
