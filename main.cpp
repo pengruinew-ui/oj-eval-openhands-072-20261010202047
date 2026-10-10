@@ -35,7 +35,7 @@ int main(){
                 }
             }
         }
-        cout << "Simulation #" << sim << "\n";
+        cout << string(12, ' ') << "Simulation #" << sim << "\n";
         if(overlap){
             cout << "Error -- Overlapping Gears\n\n";
             sim++;
